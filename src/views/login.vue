@@ -1,6 +1,6 @@
 <template>
 	<div id="login">
-		<div class="login-header-title">限界云系统登录</div>
+		<div class="login-header-title">货运源头三维管理平台</div>
 		<div class="login-container">
 			<el-input placeholder="请输入用户名" type="text" prefix-icon="el-icon-user" v-model="userName"></el-input>
 			<el-input placeholder="请输入密码" type="password" prefix-icon="el-icon-goods" v-model="passWord"></el-input>
