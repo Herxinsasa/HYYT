@@ -99,37 +99,37 @@ const routes = [
 			},
 		}, ]
 	},
-	// {
-	// 	path: '/user',
-	// 	component: () => import('../views/index.vue'),
-	// 	name: 'user',
-	// 	redirect: "/user",
-	// 	meta: {
-	// 		hidden: false,
-	// 		clickOne: false,
-	// 		title: '用户管理'
-	// 	},
-	// 	children: [{
-	// 		path: '/user',
-	// 		component: () => import('../views/user/user.vue'),
-	// 		name: 'user',
-	// 		meta: {
-	// 			needLogin: false,
-	// 			hidden: false,
-	// 			title: '退出登录',
-	// 			keepAlive: false,
-	// 		},
-	// 	}, ]
-	// },
-	// {
-	// 	path: '/login',
-	// 	component: () => import('../views/login.vue'),
-	// 	name: 'login',
-	// 	meta: {
-	// 		hidden: true,
-	// 		title: '登录'
-	// 	},
-	// }
+	{
+		path: '/user',
+		component: () => import('../views/index.vue'),
+		name: 'user',
+		redirect: "/user",
+		meta: {
+			hidden: false,
+			clickOne: false,
+			title: '用户管理'
+		},
+		children: [{
+			path: '/user',
+			component: () => import('../views/user/user.vue'),
+			name: 'user',
+			meta: {
+				needLogin: false,
+				hidden: false,
+				title: '退出登录',
+				keepAlive: false,
+			},
+		}, ]
+	},
+	{
+		path: '/login',
+		component: () => import('../views/login.vue'),
+		name: 'login',
+		meta: {
+			hidden: true,
+			title: '登录'
+		},
+	}
 ]
 
 Vue.use(VueRouter)
